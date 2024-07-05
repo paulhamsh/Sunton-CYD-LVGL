@@ -9,7 +9,7 @@ Tutorial:     https://randomnerdtutorials.com/cheap-yellow-display-esp32-2432s02
 
 
 <p align="center">
-  <img src="https://github.com/paulhamsh/Elecrow-Terminal-RGB-LVGL/blob/main/Elecrow%20Terminal.jpg" width="400" title="Elecrow Terminal">
+  <img src="https://github.com/paulhamsh/Sunton-CYD-LVGL/blob/main/sunton_esp32_2432S028.jpg" width="400" title="Sunton 2432S028 (Cheap Yellow Display)">
 </p>
 
 
