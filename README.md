@@ -21,7 +21,8 @@ LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519
 </p>
 
 These boards come in different types   
-I have tested with:   
+I have tested with two boards below, and their LovyanGFX settings are different for rotation, RGB order and width and height.    
+
 ### MicroUSB
 ```
 Board
@@ -29,42 +30,43 @@ Board
     cfg.memory_height   =   320;
     cfg.panel_width     =   240;
     cfg.panel_height    =   320;
+    cfg.rgb_order       = false;
+    cfg.offset_rotation =     1;
 
     cfg.offset_x        =     0;
     cfg.offset_y        =     0;
-    cfg.offset_rotation =     6;
     cfg.dummy_read_pixel=     8;
     cfg.dummy_read_bits =     2;
     cfg.readable        =  true;
     cfg.invert          = false;
-    cfg.rgb_order       = true;
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
 Touch
-    cfg.offset_rotation = 1;
+    cfg.offset_rotation =     6;
 ```
 
 ### MicroUSB + USB C
 ```
 Board
-    cfg.memory_width    =   240;
-    cfg.memory_height   =   320;
-    cfg.panel_width     =   240;
-    cfg.panel_height    =   320;
+    cfg.memory_width    =   320;
+    cfg.memory_height   =   240;
+    cfg.panel_width     =   320;
+    cfg.panel_height    =   240;
+    cfg.rgb_order       =  true;
+    cfg.offset_rotation =     6;
 
     cfg.offset_x        =     0;
     cfg.offset_y        =     0;
-    cfg.offset_rotation =     6;
     cfg.dummy_read_pixel=     8;
     cfg.dummy_read_bits =     2;
     cfg.readable        =  true;
     cfg.invert          = false;
-    cfg.rgb_order       = true;
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
 Touch
-    cfg.offset_rotation = 1;
+    cfg.offset_rotation =     1;
 ```
+
 This is a useful site for explaining the differences:
 
 https://github.com/rzeldent/platformio-espressif32-sunton    
