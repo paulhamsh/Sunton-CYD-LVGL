@@ -28,7 +28,6 @@ I have tested with:
 | Board type       | Details       |
 |------------------|---------------|    
 |  MicroUSB                |               |    
-|------------------|---------------|    
 |  MicroUSB + USB C               |               |  
 
 
