@@ -22,7 +22,7 @@ LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519
 
 These boards come in different types   
 I have tested with:   
-- MicroUSB
+### MicroUSB
 ```
 Board
     cfg.memory_width    =   240;
@@ -44,7 +44,7 @@ Touch
     cfg.offset_rotation = 1;
 ```
 
-- MicroUSB + USB C
+### MicroUSB + USB C
 ```
 Board
     cfg.memory_width    =   240;
