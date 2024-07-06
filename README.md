@@ -20,4 +20,9 @@ LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519
   <img src="https://github.com/paulhamsh/Sunton-CYD-LVGL/blob/main/sunton_esp32_2432S028.jpg" width="400" title="Sunton 2432S028 (Cheap Yellow Display)">
 </p>
 
+These boards come in different types   
+This is a useful site for explaining the differences:
+
+https://github.com/rzeldent/platformio-espressif32-sunton    
+https://github.com/rzeldent/esp32-smartdisplay    
 
