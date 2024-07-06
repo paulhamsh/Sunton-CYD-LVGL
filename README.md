@@ -67,6 +67,14 @@ Touch
     cfg.offset_rotation =     1;
 ```
 
+With TFT_eSPI, the only change is in ```void setup()```  
+
+```
+  // For the Micro USB board, comment this out
+  // For the Micro USB & USB C board, we need to invert the display
+  //tft.invertDisplay(1);
+```
+
 This is a useful site for explaining the differences:
 
 https://github.com/rzeldent/platformio-espressif32-sunton    
