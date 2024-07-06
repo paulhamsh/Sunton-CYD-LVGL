@@ -21,6 +21,10 @@ LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519
 </p>
 
 These boards come in different types   
+I have tested with:   
+- MicroUSB   
+- MicroUSB + USB C   
+
 This is a useful site for explaining the differences:
 
 https://github.com/rzeldent/platformio-espressif32-sunton    
