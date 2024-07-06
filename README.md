@@ -27,8 +27,9 @@ I have tested with:
 
 | Board type       | Details       |
 |------------------|---------------|    
-|                  |               |    
+|  MicroUSB                |               |    
 |------------------|---------------|    
+|  MicroUSB + USB C               |               |  
 
 
 This is a useful site for explaining the differences:
