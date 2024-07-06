@@ -22,15 +22,49 @@ LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519
 
 These boards come in different types   
 I have tested with:   
-- MicroUSB   
-- MicroUSB + USB C   
+- MicroUSB
+```
+Board
+    cfg.memory_width    =   240;
+    cfg.memory_height   =   320;
+    cfg.panel_width     =   240;
+    cfg.panel_height    =   320;
 
-| Board type       | Details       |
-|------------------|---------------|    
-|  MicroUSB                |               |    
-|  MicroUSB + USB C               |               |  
+    cfg.offset_x        =     0;
+    cfg.offset_y        =     0;
+    cfg.offset_rotation =     6;
+    cfg.dummy_read_pixel=     8;
+    cfg.dummy_read_bits =     2;
+    cfg.readable        =  true;
+    cfg.invert          = false;
+    cfg.rgb_order       = true;
+    cfg.dlen_16bit      = false;
+    cfg.bus_shared      = false;
+Touch
+    cfg.offset_rotation = 1;
+```
 
+- MicroUSB + USB C
+```
+Board
+    cfg.memory_width    =   240;
+    cfg.memory_height   =   320;
+    cfg.panel_width     =   240;
+    cfg.panel_height    =   320;
 
+    cfg.offset_x        =     0;
+    cfg.offset_y        =     0;
+    cfg.offset_rotation =     6;
+    cfg.dummy_read_pixel=     8;
+    cfg.dummy_read_bits =     2;
+    cfg.readable        =  true;
+    cfg.invert          = false;
+    cfg.rgb_order       = true;
+    cfg.dlen_16bit      = false;
+    cfg.bus_shared      = false;
+Touch
+    cfg.offset_rotation = 1;
+```
 This is a useful site for explaining the differences:
 
 https://github.com/rzeldent/platformio-espressif32-sunton    
