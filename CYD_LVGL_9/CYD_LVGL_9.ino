@@ -88,7 +88,11 @@ void setup()
 
   tft.init();
   tft.setRotation(3); //This is the display in landscape
-  tft.invertDisplay(1);
+  // For the Micro USB board, this needs to be
+  // tft.invertDisplay(0);
+  // For the Micro USB & USB C board, we need to invert the display
+  // tft.invertDisplay(1);
+  tft.invertDisplay(0); 
 
   //Initialize the XPT2046 input device driver
   indev = lv_indev_create();
