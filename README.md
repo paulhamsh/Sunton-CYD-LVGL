@@ -70,9 +70,11 @@ Touch
 With TFT_eSPI, the only change is in ```void setup()```  
 
 ```
-  // For the Micro USB board, comment this out
+  // For the Micro USB board, this needs to be
+  // tft.invertDisplay(0);
   // For the Micro USB & USB C board, we need to invert the display
-  //tft.invertDisplay(1);
+  // tft.invertDisplay(1);
+  tft.invertDisplay(1);
 ```
 
 This is a useful site for explaining the differences:
