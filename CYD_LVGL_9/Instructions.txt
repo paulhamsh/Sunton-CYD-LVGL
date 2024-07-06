@@ -1,0 +1,31 @@
+Arduino setup
+	Board ESP32 Dev Module
+	Set Flash Mode DIO
+
+
+Install LVGL 9.1.0
+
+Install LVGL 9.0.0
+Install TFT_eSPI 2.5.34
+Install  XPT2046_Touchscreen library by Paul Stoffregen 1.4
+
+
+
+Move demos and examples
+Copy lv_conf.h
+
+(It contains:
+		#define LV_USE_TFT_ESPI         1
+)
+
+
+And TFT setup file:
+	user_setup.h
+
+Needs to be in Arduino\libraries\TFT_eSPI\
+
+
+
+
+
+
