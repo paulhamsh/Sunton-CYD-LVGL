@@ -24,7 +24,7 @@ These boards come in different types
 I have tested with:   
 ### MicroUSB
 ```
-Board
+**Board**
     cfg.memory_width    =   240;
     cfg.memory_height   =   320;
     cfg.panel_width     =   240;
@@ -40,13 +40,13 @@ Board
     cfg.rgb_order       = true;
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
-Touch
+**Touch**
     cfg.offset_rotation = 1;
 ```
 
 ### MicroUSB + USB C
 ```
-Board
+**Board**
     cfg.memory_width    =   240;
     cfg.memory_height   =   320;
     cfg.panel_width     =   240;
@@ -62,7 +62,7 @@ Board
     cfg.rgb_order       = true;
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
-Touch
+**Touch**
     cfg.offset_rotation = 1;
 ```
 This is a useful site for explaining the differences:
