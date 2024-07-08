@@ -22,7 +22,7 @@ uint16_t touchScreenMinimumX = 200, touchScreenMaximumX = 3700, touchScreenMinim
 
 class LGFX : public lgfx::LGFX_Device
 {
-  lgfx::Panel_ILI9341 _panel_instance;
+  lgfx::Panel_ILI9342 _panel_instance;
   lgfx::Bus_SPI       _bus_instance;
   lgfx::Light_PWM     _light_instance;
   lgfx::Touch_XPT2046 _touch_instance;
@@ -54,15 +54,15 @@ public:LGFX(void){
     cfg.memory_height   =   240;
     cfg.panel_width     =   320;
     cfg.panel_height    =   240;
-    cfg.rgb_order       =  true;
-    cfg.offset_rotation =     6;
+    cfg.rgb_order       = false;
+    cfg.offset_rotation =     2; 
+    cfg.invert          =  true; 
     
     cfg.offset_x        =     0;
     cfg.offset_y        =     0;
     cfg.dummy_read_pixel=     8;
     cfg.dummy_read_bits =     2;
     cfg.readable        =  true;
-    cfg.invert          = false;
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
     _panel_instance.config(cfg);
@@ -78,13 +78,14 @@ public:LGFX(void){
   }
   { 
     auto cfg = _touch_instance.config();
+    cfg.offset_rotation     = 5; 
+    
     cfg.x_min             = 300; 
     cfg.x_max            = 3900; 
     cfg.y_min             = 200;
     cfg.y_max            = 3700; 
     cfg.pin_int            = 36; 
     cfg.bus_shared      = false; 
-    cfg.offset_rotation     = 1; 
     cfg.spi_host    = VSPI_HOST;
     cfg.freq          = 1000000;
     cfg.pin_sclk           = 25; 
