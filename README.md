@@ -23,9 +23,10 @@ LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519
 These boards come in different types   
 I have tested with two boards below, and their LovyanGFX settings are different for rotation, RGB order and width and height.    The seem to need different drivers.   
 
-|------------------|---------|
-| MicroUSB         | ILI9341 |
-| MicroUSB + USB C | ILI9342 |
+| Board            | Driver  |    
+|------------------|---------|   
+| MicroUSB         | ILI9341 |   
+| MicroUSB + USB C | ILI9342 |   
 
 
 ### MicroUSB
