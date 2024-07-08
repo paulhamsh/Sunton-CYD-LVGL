@@ -56,13 +56,13 @@ public:LGFX(void){
     cfg.panel_height    =   320;
     cfg.rgb_order       = false; 
     cfg.offset_rotation =     1; 
-
+    cfg.invert          = false;
+    
     cfg.offset_x        =     0;
     cfg.offset_y        =     0;
     cfg.dummy_read_pixel=     8;
     cfg.dummy_read_bits =     2;
     cfg.readable        =  true;
-    cfg.invert          = false;
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
     _panel_instance.config(cfg);
