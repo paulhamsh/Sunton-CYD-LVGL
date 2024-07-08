@@ -27,6 +27,7 @@ I have tested with two boards below, and their LovyanGFX settings are different 
 |------------------|---------|   
 | MicroUSB         | ILI9341 |   
 | MicroUSB + USB C | ILI9342 |   
+| USB C            |         |   
 
 
 ### MicroUSB
