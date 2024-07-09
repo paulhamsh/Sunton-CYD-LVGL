@@ -30,6 +30,8 @@ I have tested with two boards below, and their LovyanGFX settings are different 
 | USB C            |         |   
 
 
+## Lovyan GFX settings
+
 ### MicroUSB
 ```
 Device
@@ -77,6 +79,7 @@ Board
 Touch
     cfg.offset_rotation =     5;
 ```
+## TFT_eSPI settings
 
 With TFT_eSPI, the only change is in ```void setup()```  
 
