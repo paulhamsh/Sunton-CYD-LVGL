@@ -7,7 +7,7 @@ Manufacturer links (not in English):
 http://www.jczn1688.com/zlxz    
 http://www.jczn1688.com/filedownload/536930    
 
-This on has downloads for useful documntation and programs:    
+This one has downloads for useful documntation and programs:    
 http://pan.jczn1688.com/1/SPI%20%20display%20module  
      
 Nice wiki:     https://wiki.makerfabs.com/Sunton_ESP32_2.8_inch_240x320_TFT_with_Touch.html   
