@@ -37,10 +37,10 @@ I have tested with two boards below, and their LovyanGFX settings are different 
 The examples in this report use either TFT_eSPI and XPT2046_Touchsrceen OR Lovyan GFX    
 
 ```
-LVGL                9.0.0
-TFT_eSPI            2.5.34
-XPT2046_Touchscreen 1.4
-Lovyan              GFX 1.1.16
+LVGL                   9.0.0
+TFT_eSPI               2.5.34
+XPT2046_Touchscreen    1.4
+Lovyan GFX             1.1.16
 ```
 
 The Arduino board setup is:
