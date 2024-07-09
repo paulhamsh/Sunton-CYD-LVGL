@@ -86,15 +86,92 @@ Touch
 ```
 ## TFT_eSPI settings
 
-With TFT_eSPI, the only change is in ```void setup()```  
+### MicroUSB   
+
+This board should use these settings in ```User_Setup.h```   
+```
+#define ILI9341_2_DRIVER
+#define TFT_RGB_ORDER TFT_BGR  
+```
+
+And these commands in ```void setup()```    
+```
+tft.invertDisplay(1);
+tft.setRotation(3);
+```
+
+### MicroUSB + USB C
+
+This board should use these settings in ```User_Setup.h```   
+```
+#define ILI9342_GAMMA_2
+#define ILI9342_DRIVER
+#define TFT_RGB_ORDER TFT_RGB  
+```
+
+And a modified ```ILI9341_Init.h``` which includes these conditional lines in the section starting
+```
+#if defined (ILI9341_DRIVER) || defined (ILI9342_DRIVER)
+```
 
 ```
-  // For the Micro USB board, this needs to be
-  // tft.invertDisplay(0);
-  // For the Micro USB & USB C board, we need to invert the display
-  // tft.invertDisplay(1);
-  tft.invertDisplay(1);
+#ifndef ILI9342_GAMMA_2
+  writecommand(ILI9341_GMCTRP1);    //Set Gamma
+  writedata(0x0F);
+
+  // Lines ommitted
+
+  writedata(0x36);
+  writedata(0x0F);
+
+#else
+
+// New Gammas for 2432S028 board
+writecommand(0xE0); //Set Gamma
+writedata(0x00);
+writedata(0x0c);
+writedata(0x11);
+writedata(0x04);
+writedata(0x11);
+writedata(0x08);
+writedata(0x37);
+writedata(0x89);
+writedata(0x4c);
+writedata(0x06);
+writedata(0x0c);
+writedata(0x0a);
+writedata(0x2e);
+writedata(0x34);
+writedata(0x0f);
+
+writecommand(0XE1); //Set Gamma
+writedata(0x00);
+writedata(0x0b);
+writedata(0x11);
+writedata(0x05);
+writedata(0x13);
+writedata(0x09);
+writedata(0x33);
+writedata(0x67);
+writedata(0x48);
+writedata(0x07);
+writedata(0x0e);
+writedata(0x0b);
+writedata(0x23);
+writedata(0x33);
+writedata(0x0f);
+
+#endif
+
+
 ```
+
+And these commands in ```void setup()```    
+```
+tft.setRotation(3);
+```
+
+
 
 
 
