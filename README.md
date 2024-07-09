@@ -34,6 +34,31 @@ I have tested with two boards below, and their LovyanGFX settings are different 
 | MicroUSB + USB C | ILI9342 |   
 | USB C            |         |   
 
+The examples in this report use either TFT_eSPI and XPT2046_Touchsrceen OR Lovyan GFX    
+
+```
+LVGL                9.0.0
+TFT_eSPI            2.5.34
+XPT2046_Touchscreen 1.4
+Lovyan              GFX 1.1.16
+```
+
+The Arduino board setup is:
+```
+ESP32 Dev Module
+FLash Mode DIO
+```
+
+As usual for LVGL, move the ```demos``` and ```examples``` libraries to ```src```    
+
+Copy this ```lv_conf_.h``` to ```src\lv_conf.h```
+If using ```TFT_eSPI``` then copy these files:
+```
+User_Setup.h     Arduino\libraries\TFT_eSPI\User_Setup.h
+ILI9341_Init.h   Arduino\libraries\TFT_eSPI\TFT_Drivers\ILI9341_Init.h
+```
+
+For TFT_eSPI you need to comment out lines in ```User_Setup.h``` as described below    
 
 ## Lovyan GFX settings
 
