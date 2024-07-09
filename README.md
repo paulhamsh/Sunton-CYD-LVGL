@@ -51,7 +51,7 @@ FLash Mode DIO
 
 As usual for LVGL, move the ```demos``` and ```examples``` libraries to ```src```    
 
-Copy this ```lv_conf_.h``` to ```src\lv_conf.h```
+Copy this ```lv_conf_.h``` to ```src\lv_conf.h```    
 If using ```TFT_eSPI``` then copy these files:
 ```
 User_Setup.h     Arduino\libraries\TFT_eSPI\User_Setup.h
