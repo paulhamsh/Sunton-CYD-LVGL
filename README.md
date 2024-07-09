@@ -15,6 +15,11 @@ Information:   https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display
 Tutorial:      https://randomnerdtutorials.com/cheap-yellow-display-esp32-2432s028r/    
 LovyanGFX config here: https://github.com/lovyan03/LovyanGFX/issues/519   
 
+These boards come in different types   
+These are useful sites for explaining the differences:   
+
+https://github.com/rzeldent/platformio-espressif32-sunton    
+https://github.com/rzeldent/esp32-smartdisplay    
 
 <p align="center">
   <img src="https://github.com/paulhamsh/Sunton-CYD-LVGL/blob/main/sunton_esp32_2432S028.jpg" width="400" title="Sunton 2432S028 (Cheap Yellow Display)">
@@ -91,8 +96,5 @@ With TFT_eSPI, the only change is in ```void setup()```
   tft.invertDisplay(1);
 ```
 
-This is a useful site for explaining the differences:
 
-https://github.com/rzeldent/platformio-espressif32-sunton    
-https://github.com/rzeldent/esp32-smartdisplay    
 
