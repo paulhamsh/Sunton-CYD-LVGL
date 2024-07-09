@@ -109,7 +109,7 @@ This board should use these settings in ```User_Setup.h```
 #define TFT_RGB_ORDER TFT_RGB  
 ```
 
-And a modified ```ILI9341_Init.h``` which includes these conditional lines in the section starting
+And a modified ```ILI9341_Init.h``` to handle new gamma settings - include these conditional lines in the section starting
 ```
 #if defined (ILI9341_DRIVER) || defined (ILI9342_DRIVER)
 ```
@@ -162,14 +162,8 @@ writedata(0x33);
 writedata(0x0f);
 
 #endif
-
-
 ```
 
-And these commands in ```void setup()```    
-```
-tft.setRotation(3);
-```
 
 
 
