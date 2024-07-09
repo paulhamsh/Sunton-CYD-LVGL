@@ -121,7 +121,6 @@ This board should use these settings in ```User_Setup.h```
 
 And these commands in ```void setup()```    
 ```
-tft.invertDisplay(1);
 tft.setRotation(3);
 ```
 
