@@ -89,7 +89,7 @@ void setup()
   tft.init();
   // Include the next two lines for the Micro USB / ILI9341_2_DRIVER setting
   tft.setRotation(3); 
-  //tft.invertDisplay(1); 
+  tft.invertDisplay(1); 
 
   
   //Initialize the XPT2046 input device driver
