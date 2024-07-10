@@ -88,7 +88,7 @@ void setup()
 
   tft.init();
   tft.setRotation(3); 
-  tft.invertDisplay(1); 
+  //tft.invertDisplay(1); 
 
   
   //Initialize the XPT2046 input device driver
