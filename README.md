@@ -52,13 +52,10 @@ FLash Mode DIO
 As usual for LVGL, move the ```demos``` and ```examples``` libraries to ```src```    
 
 Copy this ```lv_conf_.h``` to ```src\lv_conf.h```    
-If using ```TFT_eSPI``` then copy these files:
+If using ```TFT_eSPI``` then copy this file:
 ```
 User_Setup.h     Arduino\libraries\TFT_eSPI\User_Setup.h
-ILI9341_Init.h   Arduino\libraries\TFT_eSPI\TFT_Drivers\ILI9341_Init.h
 ```
-
-For TFT_eSPI you need to comment out lines in ```User_Setup.h``` as described below    
 
 ## Lovyan GFX settings
 
@@ -113,80 +110,12 @@ Touch
 
 ### MicroUSB   
 
-This board should use these settings in ```User_Setup.h```   
-```
-#define ILI9341_2_DRIVER
-#define TFT_RGB_ORDER TFT_BGR  
-```
+Copy the ```User_Setup.h``` provided   
 
-And these commands in ```void setup()```    
-```
-tft.setRotation(3);
-```
+### MicroUSB + USB C (aka 2 USB)
 
-### MicroUSB + USB C
+Copy the ```User_Setup.h``` provided      
 
-This board should use these settings in ```User_Setup.h```   
-```
-#define ILI9342_GAMMA_2
-#define ILI9342_DRIVER
-#define TFT_RGB_ORDER TFT_RGB  
-```
-
-And a modified ```ILI9341_Init.h``` (in the files above) to handle new gamma settings - include these conditional lines in the section starting
-```
-#if defined (ILI9341_DRIVER) || defined (ILI9342_DRIVER)
-```
-
-```
-#ifndef ILI9342_GAMMA_2
-  writecommand(ILI9341_GMCTRP1);    //Set Gamma
-  writedata(0x0F);
-
-  // Lines ommitted
-
-  writedata(0x36);
-  writedata(0x0F);
-
-#else
-
-// New Gammas for 2432S028 board
-writecommand(0xE0); //Set Gamma
-writedata(0x00);
-writedata(0x0c);
-writedata(0x11);
-writedata(0x04);
-writedata(0x11);
-writedata(0x08);
-writedata(0x37);
-writedata(0x89);
-writedata(0x4c);
-writedata(0x06);
-writedata(0x0c);
-writedata(0x0a);
-writedata(0x2e);
-writedata(0x34);
-writedata(0x0f);
-
-writecommand(0XE1); //Set Gamma
-writedata(0x00);
-writedata(0x0b);
-writedata(0x11);
-writedata(0x05);
-writedata(0x13);
-writedata(0x09);
-writedata(0x33);
-writedata(0x67);
-writedata(0x48);
-writedata(0x07);
-writedata(0x0e);
-writedata(0x0b);
-writedata(0x23);
-writedata(0x33);
-writedata(0x0f);
-
-#endif
-```
 
 
 
