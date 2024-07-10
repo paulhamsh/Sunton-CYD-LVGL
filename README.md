@@ -28,11 +28,11 @@ https://github.com/rzeldent/esp32-smartdisplay
 These boards come in different types   
 I have tested with two boards below, and their LovyanGFX settings are different for rotation, RGB order and width and height.    The seem to need different drivers.   
 
-| Board            | Driver  |    
-|------------------|---------|   
-| MicroUSB         | ILI9341 |   
-| MicroUSB + USB C | ST7789  |   
-| USB C            |         |   
+| Board                    | Driver  |    
+|--------------------------|---------|   
+| MicroUSB                 | ILI9341 |   
+| MicroUSB + USB C (2 USB) | ST7789  |   
+| USB C                    |         |   
 
 The examples in this report use either TFT_eSPI and XPT2046_Touchsrceen OR Lovyan GFX    
 
