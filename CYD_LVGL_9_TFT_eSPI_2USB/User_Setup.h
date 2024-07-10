@@ -2,7 +2,7 @@
 
 #define ST7789_DRIVER     
 #define TFT_RGB_ORDER TFT_BGR  // Colour order Blue-Green-Red
-#define INVERSION_OFF
+#define TFT_INVERSION_OFF
 
 // End of selections
 
