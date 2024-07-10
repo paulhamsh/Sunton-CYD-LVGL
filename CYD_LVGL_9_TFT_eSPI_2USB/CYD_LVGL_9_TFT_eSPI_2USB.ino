@@ -87,7 +87,6 @@ void setup()
   lv_display_set_buffers(disp, draw_buf, NULL, DRAW_BUF_SIZE, LV_DISPLAY_RENDER_MODE_PARTIAL);
 
   tft.init();
-  // Include the next two lines for the Micro USB / ILI9341_2_DRIVER setting
   tft.setRotation(3); 
   tft.invertDisplay(1); 
 
