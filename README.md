@@ -31,7 +31,7 @@ I have tested with two boards below, and their LovyanGFX settings are different 
 | Board            | Driver  |    
 |------------------|---------|   
 | MicroUSB         | ILI9341 |   
-| MicroUSB + USB C | ILI9342 |   
+| MicroUSB + USB C | ST7789  |   
 | USB C            |         |   
 
 The examples in this report use either TFT_eSPI and XPT2046_Touchsrceen OR Lovyan GFX    
@@ -86,18 +86,18 @@ Touch
     cfg.offset_rotation =     6;
 ```
 
-### MicroUSB + USB C
+### MicroUSB + USB C (aka 2 USB)
 ```
 Device
-    lgfx::Panel_ILI9342 _panel_instance;
+    lgfx::Panel_ST7789 _panel_instance;
 Board
     cfg.memory_width    =   320;
     cfg.memory_height   =   240;
     cfg.panel_width     =   320;
     cfg.panel_height    =   240;
     cfg.rgb_order       = false;
-    cfg.offset_rotation =     2; 
-    cfg.invert          =  true; 
+    cfg.offset_rotation =     3; 
+    cfg.invert          = false; 
 
     cfg.offset_x        =     0;
     cfg.offset_y        =     0;
@@ -107,7 +107,7 @@ Board
     cfg.dlen_16bit      = false;
     cfg.bus_shared      = false;
 Touch
-    cfg.offset_rotation =     5;
+    cfg.offset_rotation =     4;
 ```
 ## TFT_eSPI settings
 
