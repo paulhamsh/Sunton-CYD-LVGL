@@ -91,10 +91,10 @@ Touch
 Device
     lgfx::Panel_ST7789 _panel_instance;
 Board
-    cfg.memory_width    =   320;
-    cfg.memory_height   =   240;
-    cfg.panel_width     =   320;
-    cfg.panel_height    =   240;
+    cfg.memory_width    =   240;
+    cfg.memory_height   =   320;
+    cfg.panel_width     =   240;
+    cfg.panel_height    =   320;
     cfg.rgb_order       = false;
     cfg.offset_rotation =     3; 
     cfg.invert          = false; 
