@@ -1,4 +1,4 @@
-# Sunton-CYD-LVGL
+# Sunton-CYD-LVGL (ESP32 2432S028)
 Sunton  ESP32 2432S028 (Cheap Yellow Display) LVGL
 
 ## Useful information
